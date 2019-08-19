@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" media="screen" th:href="@{/css/core.css}" />
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	    <a class="navbar-brand" href="#">Navbar</a>
+	</nav>
+	<h1>
+		"Welcome home!!!"
+		<h1 />
+		<table>
+			<tr>
+				<td><div class"background-color:aquablue">
+					<button type="submit" name="BrowseQuestions" th:onclick="location.href='browse'">Browse Questions</button>
+					</div>
+				</td>
+				<td>
+					<div class="AddQuestions">
+						<button type="submit" name="AddQuestions" th:onclick="location.href='addquestion'">Contribute a Question</button>
+					</div>
+				</td>
+			</tr>
+		</table>
+	
+		
+	<div th:insert="~{footer :: copy}"></div>	
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Serving Web Content</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>"ADD Questions !!!"<h1 />
+	
+	<form action="#" th:object="${question}" th:action="@{/submitquestion}" method="post">
+
+      <fieldset>
+
+        <div>
+          <label for="questionText">Question: </label>
+          <input type="text" th:field="*{questionText}" />
+        </div>
+        <div>
+          <label for="answer">Answer: </label>
+          <input type="text" th:field="*{answer}" />
+        </div>
+
+        <div>
+          <input type="submit" value="save" />
+        </div>
+
+      </fieldset>
+    </form>
+		
+</body>
+</html>
